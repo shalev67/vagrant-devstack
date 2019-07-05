@@ -1,7 +1,7 @@
 {
   "builders": [{
     "type": "qemu",
-    "iso_url": "{{user `mirror`}}/16.04/ubuntu-16.04.5-server-amd64.iso",
+    "iso_url": "{{user `mirror`}}/16.04/ubuntu-16.04.6-server-amd64.iso",
     "iso_checksum": "{{user `iso_checksum`}}",
     "iso_checksum_type": "{{user `iso_checksum_type`}}",
     "output_directory": "output-ubuntu-16.04-amd64-{{build_type}}",
@@ -62,11 +62,11 @@
     "output": "ubuntu-16.04-amd64-{{.Provider}}.box"
   }],
   "variables": {
-    "compression_level": "6",
+    "compression_level": "9",
     "cpus": "4",
     "disk_size": "102400",
     "headless": "false",
-    "iso_checksum": "c94de1cc2e10160f325eb54638a5b5aa38f181d60ee33dae9578d96d932ee5f8",
+    "iso_checksum": "16afb1375372c57471ea5e29803a89a5a6bd1f6aabea2e5e34ac1ab7eb9786ac",
     "iso_checksum_type": "sha256",
     "memory": "8192",
     "mirror": "http://releases.ubuntu.com",
